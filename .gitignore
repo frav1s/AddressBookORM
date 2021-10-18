@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/AddressBook/AddressBookTest/bin/Debug
+/AddressBook/AddressBookTest/obj
+/AddressBook/AddressBookUI/obj
+/AddressBook/packages

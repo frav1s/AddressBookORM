@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AddressBookLibrary.DatabaseContext.AddressBookDbContext">
+    <Position X="1" Y="2" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>DatabaseContext\AddressBookDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AddressBookLibrary.Model.Note">
+    <Position X="8.75" Y="6.25" Width="1.5" />
+    <Members>
+      <Property Name="_date" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AddressBookLibrary.Model.Person">
+    <Position X="3.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAIAAAGAAgBAAAAAQAAAgAAAAAAAAAAgAAIAg=</HashCode>
+      <FileName>Model\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AddressBookLibrary.Model.ValidationModel">
+    <Position X="7" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Model\ValidationModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AddressBookLibrary.Repository.EfGenericRepository&lt;T&gt;" BaseTypeListCollapsed="true">
+    <Position X="11" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAABAAAAAAAJAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Repository\EFGenericRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.EntityFrameworkCore.DbContext">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="System.Object">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="AddressBookLibrary.Repository.IRepository&lt;T&gt;">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAABAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Repository\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

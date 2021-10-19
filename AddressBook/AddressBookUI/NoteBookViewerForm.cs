@@ -234,7 +234,11 @@ namespace AddressBookUI
             DrawNotes();
             ShowPanelSearch();
         }
-
+        /// <summary>
+        ///    Поиск записок заданной даты
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FindNoteAtThisDate(object sender, EventArgs e)
         {
             LoadNote();
@@ -251,7 +255,12 @@ namespace AddressBookUI
             DrawNotes();
             ShowPanelSearch();
         }
-
+        /// <summary>
+        ///     Лябда функция сортировки Note по возрастанию даты
+        /// </summary>
+        /// <param name="s1">Первая записка</param>
+        /// <param name="s2">Вторая записка</param>
+        /// <returns>Возвращает -1,0,1 в зависимости от результата сравнения</returns>
         private int SortNewNote(Note s1, Note s2)
         {
             var t1 = DateTime.Parse(s1._date);
@@ -262,7 +271,12 @@ namespace AddressBookUI
                 return -1;
             return 0;
         }
-
+        /// <summary>
+        ///     Лябда функция сортировки Note по убыванию даты
+        /// </summary>
+        /// <param name="s1">Первая записка</param>
+        /// <param name="s2">Вторая записка</param>
+        /// <returns>Возвращает -1,0,1 в зависимости от результата сравнения</returns>
         private int SortOldNote(Note s1, Note s2)
         {
             var t1 = DateTime.Parse(s1._date);

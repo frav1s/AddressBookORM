@@ -1,9 +1,9 @@
-﻿using AddressBookLibrary.DatabaseContext;
+﻿using System;
+using System.Windows.Forms;
+using AddressBookLibrary.DatabaseContext;
 using AddressBookLibrary.Model;
 using AddressBookLibrary.Repository;
 using AddressBookLibrary.Validation;
-using System;
-using System.Windows.Forms;
 
 namespace AddressBookUI
 {

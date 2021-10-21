@@ -2,7 +2,7 @@
 using AddressBookLibrary.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AddressBookTest.RepositoryTest
+namespace AdressBookTest.RepositoryTest
 {
     [TestClass]
     public class GetAllPersonsTest : RepositoryTest

@@ -2,7 +2,7 @@
 using AddressBookLibrary.Validation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AddressBookTest.ValidationTest
+namespace AdressBookTest.ValidationTest
 {
     [TestClass]
     public class ValidationFormTest : Validation

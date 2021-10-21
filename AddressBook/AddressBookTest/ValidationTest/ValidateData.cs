@@ -1,9 +1,9 @@
-﻿using AddressBookLibrary.Model;
+﻿using System;
+using AddressBookLibrary.Model;
 using AddressBookLibrary.Validation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
-namespace AddressBookTest.ValidationTest
+namespace AdressBookTest.ValidationTest
 {
     [TestClass]
     public class ValidateData : Validation

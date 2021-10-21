@@ -1,9 +1,9 @@
-﻿using AddressBookLibrary.Model;
+﻿using System.Linq;
+using AddressBookLibrary.Model;
 using AddressBookLibrary.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Linq;
 
-namespace AddressBookTest.RepositoryTest
+namespace AdressBookTest.RepositoryTest
 {
     [TestClass]
     public class AddPersonTest : RepositoryTest

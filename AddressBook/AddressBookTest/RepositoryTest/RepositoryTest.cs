@@ -1,10 +1,10 @@
-﻿using AddressBookLibrary.DatabaseContext;
+﻿using System;
+using AddressBookLibrary.DatabaseContext;
 using AddressBookLibrary.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
-namespace AddressBookTest.RepositoryTest
+namespace AdressBookTest.RepositoryTest
 {
     [TestClass]
     public class RepositoryTest : IDisposable

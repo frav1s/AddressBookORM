@@ -76,6 +76,7 @@
       <DependentUpon>EditContactForm.cs</DependentUpon>
     </Compile>
     <Compile Include="IContactRequestor.cs" />
+    <Compile Include="NoteBookViewerForm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddressBookViewerForm.asa-TZ.resx">

@@ -16,7 +16,7 @@ namespace AddressBookTest.ValidationTest
             p.FirstName = "";
             p.LastName = "";
             validate = ValidateName(p);
-            Assert.AreEqual(validate.Message, "Введите имя для этого контакта.");
+            Assert.AreEqual(validate.Message, validate.errors[ErrorName.NAME_NOT_FOUND]);
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -26,7 +26,7 @@ namespace AddressBookTest.ValidationTest
             p.FirstName = "";
             p.LastName = "QQ";
             validate = ValidateName(p);
-            Assert.AreEqual(validate.Message, "Имя обязательно.");
+            Assert.AreEqual(validate.Message, validate.errors[ErrorName.NAME_IS_MALFORMED]);
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -36,7 +36,7 @@ namespace AddressBookTest.ValidationTest
             p.FirstName = "QQ";
             p.LastName = "";
             validate = ValidateName(p);
-            Assert.AreEqual(validate.Message, "Фамилия обязательна.");
+            Assert.AreEqual(validate.Message, validate.errors[ErrorName.LASTNAME_IS_MALFORMED]);
             Assert.AreEqual(false, validate.Result);
         }
 

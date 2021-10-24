@@ -15,7 +15,7 @@ namespace AdressBookTest.ValidationTest
         {
             p.CellPhone = "(123) 123-123";
             validate = ValidatePhone(p);
-            Assert.AreEqual(validate.Message, "Введенный номер  телефона не содержит достаточного количества цифр.");
+            Assert.AreEqual(validate.Message, validate.errors[ErrorName.PHONE_IS_INVALID]);
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -26,7 +26,7 @@ namespace AdressBookTest.ValidationTest
             p.OfficePhone = "";
             p.HomePhone = "(123) 123-123";
             validate = ValidatePhone(p);
-            Assert.AreEqual(validate.Message, "Введенный номер  телефона не содержит достаточного количества цифр.");
+            Assert.AreEqual(validate.Message, validate.errors[ErrorName.PHONE_IS_INVALID]);
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -38,7 +38,7 @@ namespace AdressBookTest.ValidationTest
             p.CellPhone = "";
             p.OfficePhone = "(123) 123-123";
             v2alidate = ValidatePhone(p);
-            Assert.AreEqual(v2alidate.Message, "Введенный номер  телефона не содержит достаточного количества цифр.");
+            Assert.AreEqual(validate.Message, validate.errors[ErrorName.PHONE_IS_INVALID]);
             Assert.AreEqual(false, validate.Result);
         }
 

@@ -108,7 +108,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Image = global::AddressBookUI.Properties.Resources.delete_32px;
+            this.button4.Image = global::AddressBook.Properties.Resources.delete_32px;
             this.button4.Location = new System.Drawing.Point(440, 123);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(32, 32);
@@ -146,7 +146,7 @@
             this.showOld.FlatAppearance.BorderSize = 0;
             this.showOld.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showOld.ForeColor = System.Drawing.Color.White;
-            this.showOld.Image = global::AddressBookUI.Properties.Resources.sort_down_64px;
+            this.showOld.Image = global::AddressBook.Properties.Resources.sort_down_64px;
             this.showOld.Location = new System.Drawing.Point(13, 67);
             this.showOld.Name = "showOld";
             this.showOld.Size = new System.Drawing.Size(64, 52);
@@ -160,7 +160,7 @@
             this.showNew.FlatAppearance.BorderSize = 0;
             this.showNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showNew.ForeColor = System.Drawing.Color.White;
-            this.showNew.Image = global::AddressBookUI.Properties.Resources.sort_up_64px;
+            this.showNew.Image = global::AddressBook.Properties.Resources.sort_up_64px;
             this.showNew.Location = new System.Drawing.Point(95, 71);
             this.showNew.Name = "showNew";
             this.showNew.Size = new System.Drawing.Size(64, 52);
@@ -186,7 +186,7 @@
             this.delete.FlatAppearance.BorderSize = 0;
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete.ForeColor = System.Drawing.Color.Black;
-            this.delete.Image = global::AddressBookUI.Properties.Resources.trash_64px;
+            this.delete.Image = global::AddressBook.Properties.Resources.trash_64px;
             this.delete.Location = new System.Drawing.Point(1162, 61);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(64, 64);
@@ -211,7 +211,7 @@
             this.save.FlatAppearance.BorderSize = 0;
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.save.ForeColor = System.Drawing.Color.Black;
-            this.save.Image = global::AddressBookUI.Properties.Resources.save_64px;
+            this.save.Image = global::AddressBook.Properties.Resources.save_64px;
             this.save.Location = new System.Drawing.Point(1092, 61);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(64, 64);
@@ -276,7 +276,7 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::AddressBookUI.Properties.Resources.search_32px;
+            this.button1.Image = global::AddressBook.Properties.Resources.search_32px;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button1.Location = new System.Drawing.Point(376, 118);
             this.button1.Name = "button1";
@@ -316,9 +316,9 @@
             this.editContactBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.editContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editContactBtn.Font = new System.Drawing.Font("Segoe UI", 12.75F);
-            this.editContactBtn.Image = global::AddressBookUI.Properties.Resources.edit_32px;
+            this.editContactBtn.Image = global::AddressBook.Properties.Resources.edit_32px;
             this.editContactBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.editContactBtn.Location = new System.Drawing.Point(1221, 38);
+            this.editContactBtn.Location = new System.Drawing.Point(1221, 65);
             this.editContactBtn.Name = "editContactBtn";
             this.editContactBtn.Size = new System.Drawing.Size(32, 32);
             this.editContactBtn.TabIndex = 5;
@@ -334,9 +334,9 @@
             this.RemoveButton.FlatAppearance.BorderSize = 0;
             this.RemoveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveButton.ForeColor = System.Drawing.Color.White;
-            this.RemoveButton.Image = global::AddressBookUI.Properties.Resources.delete_32px;
+            this.RemoveButton.Image = global::AddressBook.Properties.Resources.delete_32px;
             this.RemoveButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.RemoveButton.Location = new System.Drawing.Point(1145, 38);
+            this.RemoveButton.Location = new System.Drawing.Point(1145, 65);
             this.RemoveButton.Name = "RemoveButton";
             this.RemoveButton.Size = new System.Drawing.Size(32, 32);
             this.RemoveButton.TabIndex = 3;
@@ -349,7 +349,7 @@
             this.ZAButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.ZAButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ZAButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ZAButton.Image = global::AddressBookUI.Properties.Resources.alphabetical_sorting_2_32px;
+            this.ZAButton.Image = global::AddressBook.Properties.Resources.alphabetical_sorting_2_32px;
             this.ZAButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ZAButton.Location = new System.Drawing.Point(54, 80);
             this.ZAButton.Name = "ZAButton";
@@ -365,7 +365,7 @@
             this.AZButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.AZButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.AZButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AZButton.Image = global::AddressBookUI.Properties.Resources.alphabetical_sorting_32px;
+            this.AZButton.Image = global::AddressBook.Properties.Resources.alphabetical_sorting_32px;
             this.AZButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.AZButton.Location = new System.Drawing.Point(16, 80);
             this.AZButton.Name = "AZButton";
@@ -382,9 +382,9 @@
             this.CreateContactLinkLabel.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.CreateContactLinkLabel.FlatAppearance.BorderSize = 0;
             this.CreateContactLinkLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CreateContactLinkLabel.Image = global::AddressBookUI.Properties.Resources.plus_math_32px;
+            this.CreateContactLinkLabel.Image = global::AddressBook.Properties.Resources.plus_math_32px;
             this.CreateContactLinkLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.CreateContactLinkLabel.Location = new System.Drawing.Point(1183, 38);
+            this.CreateContactLinkLabel.Location = new System.Drawing.Point(1183, 65);
             this.CreateContactLinkLabel.Name = "CreateContactLinkLabel";
             this.CreateContactLinkLabel.Size = new System.Drawing.Size(32, 32);
             this.CreateContactLinkLabel.TabIndex = 4;
@@ -631,7 +631,7 @@
             this.ContactListBox.ItemHeight = 30;
             this.ContactListBox.Location = new System.Drawing.Point(16, 154);
             this.ContactListBox.Name = "ContactListBox";
-            this.ContactListBox.Size = new System.Drawing.Size(410, 274);
+            this.ContactListBox.Size = new System.Drawing.Size(410, 364);
             this.ContactListBox.TabIndex = 1;
             this.ContactListBox.SelectedIndexChanged += new System.EventHandler(this.ContactListBox_SelectedIndexChanged);
             // 
@@ -661,7 +661,7 @@
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.DimGray;
-            this.button2.BackgroundImage = global::AddressBookUI.Properties.Resources.multiply_32px;
+            this.button2.BackgroundImage = global::AddressBook.Properties.Resources.multiply_32px;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.Cursor = System.Windows.Forms.Cursors.Default;
             this.button2.FlatAppearance.BorderSize = 3;

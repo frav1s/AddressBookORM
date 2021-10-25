@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AddressBookUI.Properties {
+namespace AddressBook.Properties {
     using System;
     
     

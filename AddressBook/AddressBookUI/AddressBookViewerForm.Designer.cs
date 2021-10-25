@@ -95,10 +95,10 @@
             this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15.2F, System.Drawing.FontStyle.Bold);
             this.tabPage2.ForeColor = System.Drawing.Color.White;
-            this.tabPage2.Location = new System.Drawing.Point(4, 31);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1272, 665);
+            this.tabPage2.Size = new System.Drawing.Size(1272, 674);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Заметки";
             // 
@@ -318,7 +318,7 @@
             this.editContactBtn.Font = new System.Drawing.Font("Segoe UI", 12.75F);
             this.editContactBtn.Image = global::AddressBook.Properties.Resources.edit_32px;
             this.editContactBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.editContactBtn.Location = new System.Drawing.Point(1221, 92);
+            this.editContactBtn.Location = new System.Drawing.Point(1221, 83);
             this.editContactBtn.Name = "editContactBtn";
             this.editContactBtn.Size = new System.Drawing.Size(32, 32);
             this.editContactBtn.TabIndex = 5;
@@ -336,7 +336,7 @@
             this.RemoveButton.ForeColor = System.Drawing.Color.White;
             this.RemoveButton.Image = global::AddressBook.Properties.Resources.delete_32px;
             this.RemoveButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.RemoveButton.Location = new System.Drawing.Point(1145, 92);
+            this.RemoveButton.Location = new System.Drawing.Point(1145, 83);
             this.RemoveButton.Name = "RemoveButton";
             this.RemoveButton.Size = new System.Drawing.Size(32, 32);
             this.RemoveButton.TabIndex = 3;
@@ -384,7 +384,7 @@
             this.CreateContactLinkLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateContactLinkLabel.Image = global::AddressBook.Properties.Resources.plus_math_32px;
             this.CreateContactLinkLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.CreateContactLinkLabel.Location = new System.Drawing.Point(1183, 92);
+            this.CreateContactLinkLabel.Location = new System.Drawing.Point(1183, 83);
             this.CreateContactLinkLabel.Name = "CreateContactLinkLabel";
             this.CreateContactLinkLabel.Size = new System.Drawing.Size(32, 32);
             this.CreateContactLinkLabel.TabIndex = 4;
@@ -631,14 +631,14 @@
             this.ContactListBox.ItemHeight = 30;
             this.ContactListBox.Location = new System.Drawing.Point(16, 154);
             this.ContactListBox.Name = "ContactListBox";
-            this.ContactListBox.Size = new System.Drawing.Size(410, 454);
+            this.ContactListBox.Size = new System.Drawing.Size(410, 424);
             this.ContactListBox.TabIndex = 1;
             this.ContactListBox.SelectedIndexChanged += new System.EventHandler(this.ContactListBox_SelectedIndexChanged);
             // 
             // ViewerFormTitle
             // 
             this.ViewerFormTitle.AutoSize = true;
-            this.ViewerFormTitle.Font = new System.Drawing.Font("Swis721 Hv BT [Rus by me]", 71.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.ViewerFormTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 71.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.ViewerFormTitle.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ViewerFormTitle.Location = new System.Drawing.Point(555, 11);
             this.ViewerFormTitle.Name = "ViewerFormTitle";

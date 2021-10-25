@@ -1,11 +1,19 @@
-﻿using AddressBookLibrary.DatabaseContext;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using AddressBookLibrary.DatabaseContext;
 using AddressBookLibrary.Model;
 using AddressBookLibrary.Repository;
 using AddressBookLibrary.Validation;
-using System;
-using System.Windows.Forms;
+using AddressBookLibrary;
 
-namespace AddressBookUI
+namespace AddressBookService
 {
     public partial class CreateContactForm : Form
     {

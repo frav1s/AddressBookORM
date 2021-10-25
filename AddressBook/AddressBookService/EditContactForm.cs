@@ -2,10 +2,11 @@
 using AddressBookLibrary.Model;
 using AddressBookLibrary.Repository;
 using AddressBookLibrary.Validation;
+using AddressBookLibrary;
 using System;
 using System.Windows.Forms;
 
-namespace AddressBookUI
+namespace AddressBookService
 {
     public partial class EditContactForm : Form
     {

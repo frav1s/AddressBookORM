@@ -1,6 +1,6 @@
 ﻿using AddressBookLibrary.Model;
 
-namespace AddressBookUI
+namespace AddressBookService
 {
     public interface IContactRequestor
     {

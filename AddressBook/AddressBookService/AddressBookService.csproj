@@ -120,15 +120,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateContactForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="CreateContactForm.cs" />
     <Compile Include="CreateContactForm.Designer.cs">
       <DependentUpon>CreateContactForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditContactForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="EditContactForm.cs" />
     <Compile Include="EditContactForm.Designer.cs">
       <DependentUpon>EditContactForm.cs</DependentUpon>
     </Compile>

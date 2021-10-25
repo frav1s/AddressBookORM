@@ -63,7 +63,9 @@
     <Compile Include="AddressBookViewerForm.Designer.cs">
       <DependentUpon>AddressBookViewerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NoteBookViewerForm.cs" />
+    <Compile Include="NoteBookViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddressBookViewerForm.asa-TZ.resx">

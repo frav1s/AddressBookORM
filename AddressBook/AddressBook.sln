@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBookUI", "AddressBoo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBookTest", "AddressBookTest\AddressBookTest.csproj", "{0F687747-127E-4394-97A1-E6F4B7A013ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBookService", "AddressBookService\AddressBookService.csproj", "{31760F15-E7EC-493C-9BD1-DFECC017EDDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0F687747-127E-4394-97A1-E6F4B7A013ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F687747-127E-4394-97A1-E6F4B7A013ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F687747-127E-4394-97A1-E6F4B7A013ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31760F15-E7EC-493C-9BD1-DFECC017EDDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31760F15-E7EC-493C-9BD1-DFECC017EDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31760F15-E7EC-493C-9BD1-DFECC017EDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31760F15-E7EC-493C-9BD1-DFECC017EDDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

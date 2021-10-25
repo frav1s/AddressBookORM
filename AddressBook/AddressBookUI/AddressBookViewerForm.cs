@@ -1,10 +1,13 @@
-﻿using System;
+﻿using AddressBookLibrary.DatabaseContext;
+using AddressBookLibrary.Model;
+using AddressBookLibrary;
+using AddressBookLibrary.Repository;
+using AddressBookService;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using AddressBookLibrary.DatabaseContext;
-using AddressBookLibrary.Model;
-using AddressBookLibrary.Repository;
 
 namespace AddressBookUI
 {
@@ -70,7 +73,7 @@ namespace AddressBookUI
         /// </summary>
         private void CreateContactLinkLabel_LinkClicked(object sender, EventArgs e)
         {
-            var frm = new CreateContactForm(this);
+            var frm = new AddressBookService.CreateContactForm(this);
             frm.Show();
         }
 
@@ -167,7 +170,7 @@ namespace AddressBookUI
         /// </summary>
         private void EditContactBtn_Click(object sender, EventArgs e)
         {
-            var frm = new EditContactForm(this);
+            var frm = new AddressBookService.EditContactForm(this);
             var contact = (Person)ContactListBox.SelectedItem;
             if (contact != null)
             {
@@ -230,7 +233,7 @@ namespace AddressBookUI
 
         private void CreateContactLinkLabel_Click(object sender, EventArgs e)
         {
-            var frm = new CreateContactForm(this);
+            var frm = new AddressBookService.CreateContactForm(this);
             frm.Show();
         }
     }

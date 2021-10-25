@@ -1,11 +1,12 @@
-﻿using System;
+﻿using AddressBookLibrary.DatabaseContext;
+using AddressBookLibrary.Model;
+using AddressBookLibrary;
+using AddressBookLibrary.Repository;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using AddressBookLibrary.DatabaseContext;
-using AddressBookLibrary.Model;
-using AddressBookLibrary.Repository;
 
 namespace AddressBookUI
 {

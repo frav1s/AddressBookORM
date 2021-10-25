@@ -1,4 +1,4 @@
-﻿namespace AddressBookUI
+﻿namespace AddressBookService
 {
     partial class CreateContactForm
     {
@@ -45,7 +45,7 @@
             this.emailAddressValue = new System.Windows.Forms.TextBox();
             this.OrganizationValue = new System.Windows.Forms.TextBox();
             this.PositionValue = new System.Windows.Forms.TextBox();
-           
+
             this.cancelExitButton = new System.Windows.Forms.Button();
             this.contactInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.birthDateExLabel = new System.Windows.Forms.Label();
@@ -269,7 +269,7 @@
             this.PositionValue.Name = "PositionValue";
             this.PositionValue.Size = new System.Drawing.Size(249, 33);
             this.PositionValue.TabIndex = 9;
-            
+
             // 
             // cancelExitButton
             // 
@@ -401,7 +401,7 @@
             this.messageLbl.Text = "<Message text>";
             this.messageLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.messageLbl.Visible = false;
-   
+
 
         }
 

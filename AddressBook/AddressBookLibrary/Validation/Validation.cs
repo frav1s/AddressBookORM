@@ -1,5 +1,6 @@
 ﻿using AddressBookLibrary.Model;
 using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace AddressBookLibrary.Validation
@@ -52,7 +53,7 @@ namespace AddressBookLibrary.Validation
         /// </returns>
         public static ValidationModel ValidateName(Person p)
         {
-            var nameCheck = new ValidationModel
+            var nameCheck = new ValidationModel()
             {
                 Message = "",
                 Result = true
@@ -60,21 +61,21 @@ namespace AddressBookLibrary.Validation
 
             if (p.FirstName.Length == 0 && p.LastName.Length == 0)
             {
-                nameCheck.Message = "Введите имя для этого контакта.";
+                nameCheck.Message = nameCheck.errors[ErrorName.NAME_NOT_FOUND]._message;
                 nameCheck.Result = false;
                 return nameCheck;
             }
 
             if (p.FirstName.Length == 0)
             {
-                nameCheck.Message = "Имя обязательно.";
+                nameCheck.Message = nameCheck.errors[ErrorName.NAME_IS_MALFORMED]._message;
                 nameCheck.Result = false;
                 return nameCheck;
             }
 
             if (p.LastName.Length == 0)
             {
-                nameCheck.Message = "Фамилия обязательна.";
+                nameCheck.Message = nameCheck.errors[ErrorName.LASTNAME_IS_MALFORMED]._message;
                 nameCheck.Result = false;
                 return nameCheck;
             }
@@ -106,7 +107,7 @@ namespace AddressBookLibrary.Validation
 
             if (!CheckNumLen(digits, 8))
             {
-                dateCheck.Message = "Пример даты - 01/01/1986";
+                dateCheck.Message = dateCheck.errors[ErrorName.DATE_NOT_FOUND]._message;
                 dateCheck.Result = false;
                 return dateCheck;
             }
@@ -121,21 +122,21 @@ namespace AddressBookLibrary.Validation
 
                 if (!(month >= 1 && month <= 12))
                 {
-                    dateCheck.Message = "Месяц должен быть между 01 и 12.";
+                    dateCheck.Message = dateCheck.errors[ErrorName.MONTH_INVALID]._message;
                     dateCheck.Result = false;
                     return dateCheck;
                 }
 
                 if (!(day >= 1 && day <= 31))
                 {
-                    dateCheck.Message = "День должен быть между 01 и 31.";
+                    dateCheck.Message = dateCheck.errors[ErrorName.DAY_INVALID]._message;
                     dateCheck.Result = false;
                     return dateCheck;
                 }
 
                 if (!(year >= 1900 && year <= DateTime.Now.Year))
                 {
-                    dateCheck.Message = "Год должен быть между 1900 и" + DateTime.Now.Year;
+                    dateCheck.Message = dateCheck.errors[ErrorName.YEAR_IS_INVALID]._message;
                     dateCheck.Result = false;
                     return dateCheck;
                 }
@@ -143,7 +144,7 @@ namespace AddressBookLibrary.Validation
                 if (IsLeapYear(year) && month == 2)
                     if (day > 29)
                     {
-                        dateCheck.Message = "Високосный год - в феврале не более 29 дней.";
+                        dateCheck.Message = dateCheck.errors[ErrorName.YEAR_IS_LEAPYEAR]._message; ;
                         dateCheck.Result = false;
                         return dateCheck;
                     }
@@ -151,21 +152,21 @@ namespace AddressBookLibrary.Validation
                 if (!IsLeapYear(year) && month == 2)
                     if (day > 28)
                     {
-                        dateCheck.Message = "Не високосный год - в феврале не более 28 дней.";
+                        dateCheck.Message = dateCheck.errors[ErrorName.YEAR_IS_NOT_LEAPYEAR]._message;
                         dateCheck.Result = false;
                         return dateCheck;
                     }
 
                 if (IsThirtyDay(month) && day > 30)
                 {
-                    dateCheck.Message = "В этом месяце нет 31 дня.";
+                    dateCheck.Message = dateCheck.errors[ErrorName.TOO_MUCH_DAYS]._message;
                     dateCheck.Result = false;
                     return dateCheck;
                 }
             }
             else
             {
-                dateCheck.Message = "Пример даты - 01/01/1986";
+                dateCheck.Message = dateCheck.errors[ErrorName.DATE_NOT_FOUND]._message;
                 dateCheck.Result = false;
                 return dateCheck;
             }
@@ -196,8 +197,7 @@ namespace AddressBookLibrary.Validation
                     if (!CheckNumLen(p.CellPhone, 10) || !CheckNumLen(p.HomePhone, 10) ||
                         !CheckNumLen(p.OfficePhone, 10))
                     {
-                        phoneCheck.Message =
-                            "Введенный номер  телефона не содержит достаточного количества цифр.";
+                        phoneCheck.Message = phoneCheck.errors[ErrorName.PHONE_IS_INVALID]._message;
                         phoneCheck.Result = false;
                         return phoneCheck;
                     }

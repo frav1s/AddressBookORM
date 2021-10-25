@@ -16,7 +16,7 @@ namespace AddressBookTest.ValidationTest
         {
             p.BirthDate = "";
             validate = ValidateDate(p);
-            Assert.AreEqual(validate.Message, validate.errors[ErrorName.DATE_NOT_FOUND]);
+            Assert.AreEqual(validate.Message, "Пример даты - 01/01/1986");
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -25,7 +25,7 @@ namespace AddressBookTest.ValidationTest
         {
             p.BirthDate = "10.25.2001";
             validate = ValidateDate(p);
-            Assert.AreEqual(validate.Message, validate.errors[ErrorName.MONTH_INVALID]);
+            Assert.AreEqual(validate.Message, "Месяц должен быть между 01 и 12.");
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -34,7 +34,7 @@ namespace AddressBookTest.ValidationTest
         {
             p.BirthDate = "55.12.2001";
             validate = ValidateDate(p);
-            Assert.AreEqual(validate.Message, validate.errors[ErrorName.DAY_INVALID]);
+            Assert.AreEqual(validate.Message, "День должен быть между 01 и 31.");
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -43,7 +43,7 @@ namespace AddressBookTest.ValidationTest
         {
             p.BirthDate = "12.12.1800";
             validate = ValidateDate(p);
-            Assert.AreEqual(validate.Message, validate.errors[ErrorName.YEAR_IS_INVALID]);
+            Assert.AreEqual(validate.Message, "Год должен быть между 1900 и" + DateTime.Now.Year);
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -52,7 +52,7 @@ namespace AddressBookTest.ValidationTest
         {
             p.BirthDate = "29.02.2015";
             validate = ValidateDate(p);
-            Assert.AreEqual(validate.Message, validate.errors[ErrorName.YEAR_IS_LEAPYEAR]);
+            Assert.AreEqual(validate.Message, "Не високосный год - в феврале не более 28 дней.");
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -61,7 +61,7 @@ namespace AddressBookTest.ValidationTest
         {
             p.BirthDate = "30.02.2016";
             validate = ValidateDate(p);
-            Assert.AreEqual(validate.Message, validate.errors[ErrorName.YEAR_IS_NOT_LEAPYEAR]);
+            Assert.AreEqual(validate.Message, "Високосный год - в феврале не более 29 дней.");
             Assert.AreEqual(false, validate.Result);
         }
 
@@ -70,7 +70,7 @@ namespace AddressBookTest.ValidationTest
         {
             p.BirthDate = "31.09.2016";
             validate = ValidateDate(p);
-            Assert.AreEqual(validate.Message, validate.errors[ErrorName.TOO_MUCH_DAYS]);
+            Assert.AreEqual(validate.Message, "В этом месяце нет 31 дня.");
             Assert.AreEqual(false, validate.Result);
         }
 

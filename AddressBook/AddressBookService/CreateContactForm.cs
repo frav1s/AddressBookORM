@@ -64,6 +64,19 @@ namespace AddressBookService
             Close();
         }
 
+        public void foo() {
+            // some logic
+            firstNameValue.Text = "";
+            lastNameValue.Text = "";
+            birthDateValue.Text = "";
+            cellPhoneValue.Text = "";
+            homePhoneValue.Text = "";
+            officePhoneValue.Text = "";
+            emailAddressValue.Text = "";
+            OrganizationValue.Text = "";
+            PositionValue.Text = "";
+        }
+
         /// <summary>
         ///     Сбрасывает все поля на пустые
         /// </summary>

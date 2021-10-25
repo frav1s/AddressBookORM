@@ -19,8 +19,8 @@ namespace AddressBookLibrary.Model
     }
     public class Error
     {
-        private int _code;
-        private string _message;
+        public int _code;
+        public string _message;
 
         public Error(int code, string message)
         {
@@ -35,7 +35,7 @@ namespace AddressBookLibrary.Model
         public string Message { get; set; }
         
         public Dictionary<ErrorName, Error> errors = new Dictionary<ErrorName, Error>();
-        public ValidationModel()
+        public ValidationModel()                                                                   
         {
             errors.Add(ErrorName.PHONE_IS_INVALID, new Error(1000, "Введенный номер  телефона не содержит достаточного количества цифр."));
             errors.Add(ErrorName.DATE_NOT_FOUND, new Error(2010, "Пример даты - 01 / 01 / 1986"));

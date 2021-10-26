@@ -23,5 +23,19 @@ namespace AdressBookTest.ValidationTest
             Assert.AreEqual(validation.Message, "");
             Assert.AreEqual(true, validation.Result);
         }
+
+        [TestMethod]
+        public void Validation_form_false()
+        {
+            p.FirstName = "";
+            p.LastName = "RR";
+            p.BirthDate = "25.08.2001";
+            p.CellPhone = "(123) 123-1231";
+            p.OfficePhone = "(123) 123-1232";
+            p.HomePhone = "(123) 123-1233";
+            validation = ValidateForm(p);
+            Assert.AreEqual(validation.Message, "");
+            Assert.AreEqual(false, validation.Result);
+        }
     }
 }

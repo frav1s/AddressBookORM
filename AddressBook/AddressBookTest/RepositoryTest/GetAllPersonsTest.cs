@@ -11,11 +11,18 @@ namespace AdressBookTest.RepositoryTest
         public void GetAllPersons()
         {
             var sut = new EfGenericRepository<Person>(PersonDataContext);
-
-            // var query = new PersonQuery(personDataContext);
             var result = sut.GetAll();
 
             Assert.AreEqual(10, result.Count);
+        }
+
+        [TestMethod]
+        public void GetNotAllPersons()
+        {
+            var sut = new EfGenericRepository<Person>(PersonDataContext);
+            var result = sut.GetAll();
+
+            Assert.AreNotEqual(9, result.Count);
         }
     }
 }

@@ -21,6 +21,24 @@ namespace AdressBookTest.RepositoryTest
 
             //Assert
             Assert.AreEqual("Vladislav", result.Last().FirstName);
+            Assert.AreEqual("Kovac", result.Last().LastName);
+
+        }
+        [TestMethod]
+        public void It_should_not_add_a_person_successfully_into_data_store()
+        {
+            //Arrange
+
+            var sut = new EfGenericRepository<Person>(PersonDataContext);
+            var product = new Person { };
+            //Act
+            sut.Add(product);
+            var result = sut.GetAll();
+
+            //Assert
+            Assert.AreEqual(null, result.Last().FirstName);
+            Assert.AreEqual(null, result.Last().LastName);
+
         }
     }
 }

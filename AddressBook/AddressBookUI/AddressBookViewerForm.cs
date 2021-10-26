@@ -73,7 +73,7 @@ namespace AddressBookUI
         /// </summary>
         private void CreateContactLinkLabel_LinkClicked(object sender, EventArgs e)
         {
-            var frm = new AddressBookService.CreateContactForm(this);
+            var frm = new CreateContactForm(this);
             frm.Show();
         }
 
@@ -170,10 +170,11 @@ namespace AddressBookUI
         /// </summary>
         private void EditContactBtn_Click(object sender, EventArgs e)
         {
-            var frm = new AddressBookService.EditContactForm(this);
+            var frm = new EditContactForm(this);
             var contact = (Person)ContactListBox.SelectedItem;
             if (contact != null)
             {
+                //frm.Show();
                 frm.ContactEdit = contact;
                 frm.Show();
             }
@@ -233,7 +234,7 @@ namespace AddressBookUI
 
         private void CreateContactLinkLabel_Click(object sender, EventArgs e)
         {
-            var frm = new AddressBookService.CreateContactForm(this);
+            var frm = new CreateContactForm(this);
             frm.Show();
         }
     }

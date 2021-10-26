@@ -1,4 +1,4 @@
-﻿namespace AddressBookService
+﻿namespace AddressBookUI
 {
     partial class EditContactForm
     {

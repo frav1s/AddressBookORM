@@ -1,6 +1,6 @@
-﻿namespace AddressBookService
+﻿namespace AddressBookUI
 {
-    partial class CreateContactForm
+    public partial class CreateContactForm
     {
         /// <summary>
         /// Required designer variable.

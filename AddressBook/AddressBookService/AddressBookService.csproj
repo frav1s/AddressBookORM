@@ -120,18 +120,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateContactForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateContactForm.Designer.cs">
-      <DependentUpon>CreateContactForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EditContactForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditContactForm.Designer.cs">
-      <DependentUpon>EditContactForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="LogicCreateContact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

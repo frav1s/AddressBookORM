@@ -29,19 +29,19 @@ namespace AddressBookService
         //Dictionary<string,string> label
         private Person ContactForm(Dictionary<string, string> labelForm)
         {
-            var p = new Person();          
+            var person = new Person();          
 
-            p.FirstName = labelForm["FirstName"];
-            p.LastName = labelForm["LastName"];
-            p.BirthDate = labelForm["BirthDate"];
-            p.CellPhone = labelForm["CellPhone"];
-            p.HomePhone = labelForm["HomePhone"];
-            p.OfficePhone = labelForm["OfficePhone"];
-            p.EmailAddress = labelForm["EmailAddress"];
-            p.Organization = labelForm["Organization"];
-            p.Position = labelForm["Position"];
+            person.FirstName = labelForm["FirstName"];
+            person.LastName = labelForm["LastName"];
+            person.BirthDate = labelForm["BirthDate"];
+            person.CellPhone = labelForm["CellPhone"];
+            person.HomePhone = labelForm["HomePhone"];
+            person.OfficePhone = labelForm["OfficePhone"];
+            person.EmailAddress = labelForm["EmailAddress"];
+            person.Organization = labelForm["Organization"];
+            person.Position = labelForm["Position"];
 
-            return p;
+            return person;
         }
         private ValidationModel ValidateContactForm(Person p)
         {
@@ -50,35 +50,35 @@ namespace AddressBookService
         }
         public bool CreateContactForm(Dictionary<string, string> labelForm)
         {
-            var p = ContactForm(labelForm);
+            var person = ContactForm(labelForm);
           
-            if (ValidateContactForm(p).Result)
+            if (ValidateContactForm(person).Result)
             {
-                repository.Add(p);
-                _contact.ContactComplete(p);
+                repository.Add(person);
+                _contact.ContactComplete(person);
                 //contactForm.Close();
                 return true;
             }
             else
             {
-                labelForm["Message"] = ValidateContactForm(p).Message;
+                labelForm["Message"] = ValidateContactForm(person).Message;
                 return false;
             }
         }
         public bool EditContactForm(Dictionary<string, string> labelForm)
         {
-            var p = ContactForm(labelForm);
+            var person = ContactForm(labelForm);
 
-            if (ValidateContactForm(p).Result)
+            if (ValidateContactForm(person).Result)
             {
-                repository.Update(p);
-                _contact.ContactComplete(p);
+                repository.Update(person);
+                _contact.ContactComplete(person);
                 //contactForm.Close();
                 return true;
             }
             else
             {
-                labelForm["Message"] = ValidateContactForm(p).Message;
+                labelForm["Message"] = ValidateContactForm(person).Message;
                 return false;
             }
         }

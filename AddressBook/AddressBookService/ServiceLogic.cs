@@ -18,7 +18,6 @@ namespace AddressBookService
 {
     public class LogicContact
     {
-        private Form contactForm;
         private readonly IContactRequestor _contact;
         private readonly EfGenericRepository<Person> repository = new EfGenericRepository<Person>(new AddressBookDbContext());
         public LogicContact(IContactRequestor contact)

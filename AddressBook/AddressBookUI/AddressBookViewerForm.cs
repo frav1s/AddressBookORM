@@ -14,14 +14,14 @@ namespace AddressBookUI
     public partial class AddressBookViewerForm : Form, IContactRequestor
     {
 
-        private readonly EfGenericRepository<Person> PersonRepository =
-            new EfGenericRepository<Person>(new AddressBookDbContext());
+       // private readonly EfGenericRepository<Person> PersonRepository =
+        //    new EfGenericRepository<Person>(new AddressBookDbContext());
 
         /// <summary>
         ///     _knownContacts заполненный FillListBox() методом; _sortedContacts временный список
         /// </summary>
         private List<Person> _knownContacts = new List<Person>();
-
+        LogicContact service = new LogicContact();
         private List<Person> _sortedContacts = new List<Person>();
 
         /// <summary>
@@ -33,6 +33,7 @@ namespace AddressBookUI
             FillListBox();
             LoadNote();
             DrawNotes();
+            
         }
 
         /// <summary>
@@ -52,7 +53,8 @@ namespace AddressBookUI
         /// </summary>
         private void FillListBox()
         {
-            _knownContacts = PersonRepository.GetAll();
+
+            _knownContacts = service.GetAllContact();
             ContactListBox.DataSource = null;
             ContactListBox.DataSource = _knownContacts;
             ContactListBox.DisplayMember = "FullNameLast";
@@ -137,8 +139,8 @@ namespace AddressBookUI
             var contact = (Person)ContactListBox.SelectedItem;
             if (contact != null)
             {
-                PersonRepository.Remove(contact);
-                _knownContacts = PersonRepository.GetAll();
+                service.DeleteContact(contact);
+                _knownContacts = service.GetAllContact();
                 FillListBox();
             }
             else

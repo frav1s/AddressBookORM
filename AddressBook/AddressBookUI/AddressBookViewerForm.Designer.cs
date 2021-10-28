@@ -318,7 +318,7 @@
             this.editContactBtn.Font = new System.Drawing.Font("Segoe UI", 12.75F);
             this.editContactBtn.Image = global::AddressBook.Properties.Resources.edit_32px;
             this.editContactBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.editContactBtn.Location = new System.Drawing.Point(1221, 65);
+            this.editContactBtn.Location = new System.Drawing.Point(1221, 56);
             this.editContactBtn.Name = "editContactBtn";
             this.editContactBtn.Size = new System.Drawing.Size(32, 32);
             this.editContactBtn.TabIndex = 5;
@@ -336,7 +336,7 @@
             this.RemoveButton.ForeColor = System.Drawing.Color.White;
             this.RemoveButton.Image = global::AddressBook.Properties.Resources.delete_32px;
             this.RemoveButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.RemoveButton.Location = new System.Drawing.Point(1145, 65);
+            this.RemoveButton.Location = new System.Drawing.Point(1145, 56);
             this.RemoveButton.Name = "RemoveButton";
             this.RemoveButton.Size = new System.Drawing.Size(32, 32);
             this.RemoveButton.TabIndex = 3;
@@ -384,7 +384,7 @@
             this.CreateContactLinkLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateContactLinkLabel.Image = global::AddressBook.Properties.Resources.plus_math_32px;
             this.CreateContactLinkLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.CreateContactLinkLabel.Location = new System.Drawing.Point(1183, 65);
+            this.CreateContactLinkLabel.Location = new System.Drawing.Point(1183, 56);
             this.CreateContactLinkLabel.Name = "CreateContactLinkLabel";
             this.CreateContactLinkLabel.Size = new System.Drawing.Size(32, 32);
             this.CreateContactLinkLabel.TabIndex = 4;
@@ -631,7 +631,7 @@
             this.ContactListBox.ItemHeight = 30;
             this.ContactListBox.Location = new System.Drawing.Point(16, 154);
             this.ContactListBox.Name = "ContactListBox";
-            this.ContactListBox.Size = new System.Drawing.Size(410, 364);
+            this.ContactListBox.Size = new System.Drawing.Size(410, 334);
             this.ContactListBox.TabIndex = 1;
             this.ContactListBox.SelectedIndexChanged += new System.EventHandler(this.ContactListBox_SelectedIndexChanged);
             // 

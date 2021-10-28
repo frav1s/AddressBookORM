@@ -22,6 +22,7 @@ namespace AddressBookLibrary.Repository
 
         public T Add(T item)
         {
+            _context.Entry(item).State = EntityState.Added;
             _dbSet.Add(item);
             _context.SaveChanges();
             return item;
@@ -29,7 +30,9 @@ namespace AddressBookLibrary.Repository
 
         public T Update(T item)
         {
-            _context.Entry(item).State = EntityState.Modified;
+            //_context.Entry(item).State = EntityState.Modified;
+            _dbSet.Update(item);
+            _context.Update(item);
             _context.SaveChanges();
             return item;
         }

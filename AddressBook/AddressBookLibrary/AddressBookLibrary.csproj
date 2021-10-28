@@ -193,6 +193,10 @@
   <ItemGroup>
     <Compile Include="DatabaseContext\AddressBookDbContext.cs" />
     <Compile Include="IContactRequestor.cs" />
+    <Compile Include="Migrations\20211026212416_m3.cs" />
+    <Compile Include="Migrations\20211026212416_m3.designer.cs">
+      <DependentUpon>20211026212416_m3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\m1.cs" />
     <Compile Include="Migrations\m1.designer.cs">
       <DependentUpon>m1.cs</DependentUpon>

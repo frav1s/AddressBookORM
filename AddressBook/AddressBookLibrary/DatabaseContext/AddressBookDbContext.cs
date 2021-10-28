@@ -20,7 +20,7 @@ namespace AddressBookLibrary.DatabaseContext
         {
             if (!optionsBuilder.IsConfigured)
                 optionsBuilder.UseSqlServer(
-                    "Server=DESKTOP-8B3NTNB\\SQLEXPRESS;Database=AddressBook12; Integrated Security=true");
+                    "Server=DESKTOP-8B3NTNB\\SQLEXPRESS;Database=AddressBook4; Integrated Security=true");
         }
     }
 }

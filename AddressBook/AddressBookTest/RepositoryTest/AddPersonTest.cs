@@ -13,14 +13,14 @@ namespace AddressBookTest.RepositoryTest
         {
             //Arrange
 
-            var sut = new EfGenericRepository<Person>(PersonDataContext);
-            var product = new Person { FirstName = "Vladislav", LastName = "Kovac" };
+            var userRepo = new EfGenericRepository<Person>(PersonDataContext);
+            var personMock = new Person { FirstName = "Vladislav", LastName = "Kovac" };
             //Act
-            sut.Add(product);
-            var result = sut.GetAll();
+            Person user = userRepo.Add(personMock);
+            // var result = userRepo.GetAll();
 
             //Assert
-            Assert.AreEqual("Vladislav", result.Last().FirstName);
+            Assert.AreEqual(personMock, user);
         }
     }
 }
